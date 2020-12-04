@@ -20,12 +20,8 @@ MQTT_TLS = bool(os.environ.get('MQTT_TLS'))
 MQTT_TOPIC_PREFIX = os.environ.get('MQTT_TOPIC_PREFIX')
 
 devices = {
-    # Obtain deviceId and channel id from sniffing chrome request from smartrent
-    #  deviceId: ["friendly name", "device_mqtt_topic", "device type",channel id]
-    #     31411: ["Bedroom Thermostat", "bedroom_thermostat", "thermostat",1],
-    #     31406: ["Office Thermostat", "office_thermostat", "thermostat",2],
-    #     31399: "Living Room Thermostat", "living_room_thermostat", "thermostat",3],
-    #     31389: ["Front Door Lock", "front_door_lock", "lock",4]
+    1401998: ["Thermostat", "thermostat", "thermostat"],
+    1402036: ["Front Door Lock", "front_door_lock", "lock"]
 }
 
 #######################################################
